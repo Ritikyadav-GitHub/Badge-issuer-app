@@ -1,0 +1,283 @@
+.bg {
+    /* background: linear-gradient(167deg, #99afdd, #5593ac, #ffad75, #63a0a1);
+    background-size: 240% 240%;
+    animation: gradient-animation 12s ease infinite; */
+    background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    
+    height: 100vh;
+    width: 100vw;
+    padding-top: 5%;
+}
+
+.dashboardContainer {
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 3%;
+    padding: 6%;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wallet {
+    display: flex;
+    align-items: center;
+}
+
+.wallet span {
+    font-size: 1.2em;
+    margin-right: 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 6px;
+    padding: 3px 3px;
+    color: white;
+}
+
+.wallet button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.wallet button:hover {
+    background-color: #45a049;
+}
+
+.badgeRequests {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.badgeRequestItem {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.actions button:hover {
+    background-color: #0056b3;
+}
+
+.time {
+    top: 10px;
+    left: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for the logout button */
+.logoutButton {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.logoutButton:hover {
+    background-color: #d32f2f;
+}
+
+.button {
+    width: 15%;
+    margin-left: 35%;
+}
+
+.buttonhis {
+    width: 15%;
+    margin-right: 25%;
+}
+
+.dash {
+    font-size: 40px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #8978b8 45%, #ee4b2b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .dashboardContainer {
+        width: 90%;
+        padding: 5%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wallet {
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+
+    .wallet span {
+        font-size: 1.1em;
+    }
+
+    .wallet button {
+        margin-top: 10px;
+    }
+
+    .time {
+        font-size: 1.1em;
+    }
+
+    .badgeRequestItem {
+        font-size: 0.9em;
+    }
+
+    .actions button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboardContainer {
+        width: 90%;
+        padding: 4%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wallet {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wallet span {
+        font-size: 1em;
+    }
+
+    .wallet button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .badgeRequestItem {
+        font-size: 0.85em;
+    }
+
+    .actions button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .button, .buttonhis {
+        width: 100%;
+        margin: 0;
+    }
+
+    .dash {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboardContainer {
+        width: 95%;
+        padding: 3%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wallet {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wallet span {
+        font-size: 0.9em;
+    }
+
+    .wallet button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .badgeRequestItem {
+        font-size: 0.8em;
+    }
+
+    .actions button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .button, .buttonhis {
+        width: 100%;
+        margin: 0;
+    }
+
+    .dash {
+        font-size: 25px;
+    }
+}
+
+/* @keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
